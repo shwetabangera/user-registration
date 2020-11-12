@@ -9,28 +9,39 @@
 <body>
     <h1>REGISTRATION FORM</h1>
 
-    <form name="register">
-        Name: <input type="text" name="" value=""><br>
-        Password: <input type="password" name="" value=""><br>
-        Gender: <input type="radio" name="r1">Male
-        <input type="radio" name="r1">Female<br>
-        Hobbies: <input type="checkbox" >Dancing
-        <input type="checkbox" name="c1">Singing
-        <input type="checkbox" name="c2">Reading
-        <input type="checkbox" name="c3">Playing
-        <input type="checkbox" name="c4">Gaming
+    <form name="register" method="POST">
+        <fieldset>
+            <legend>User Details</legend>
+       <label for="name"> Name: </label><input type="text" value="" id="name"><br>
+       <label for="usr"> Password: </label><input type="password"  value="" id="usr">  
+     </fieldset><br>
+       <fieldset>
+        <legend>Personal Information</legend>
+        <label for="gen">Gender: </label><input type="radio" name="r1" id="gen">Male
+        <input type="radio" name="r1" id="gen">Female<br>
         <br>
-        <Select Course:<select>
-            <option name="" value="">HTML</option>
-            <option name="" value="">CSS</option>
-            <option name="" value="">Java</option>
-            <option name="" value="">React</option>
-        </select><br>
-        Phone :  
-<input type="text" name="country code"  value="+91" size="2"/>   
-<input type="text" name="phone"  size="10"/>   <br>
-        Address:<textarea name=" " cols="20"></textarea><br>
-<input type="submit" name="sub" value="Submit">
+        <label for="phn"> Phone :  </label>
+<input type="text" name="country code"  value="+91" size="2" "/>   
+<input type="text" name="phone"  size="10" id="phn" />   <br>
+<label for="add"> Address: </label><textarea name=" " cols="20" id="add"></textarea>
+</fieldset><br>
+<fieldset>
+    <legend>
+        User Selection
+    </legend>
+<label for="sel">Select Course: </label><select id="sel">
+    <option value="">HTML</option>
+    <option  value="">CSS</option>
+    <option  value="">Java</option>
+    <option  value="">Linux</option>
+</select><br>
+<label for="hob">Hobbies: <input type="checkbox" name="c5" id="hob">Dancing
+    <input type="checkbox" name="c1" id="hob">Singing
+    <input type="checkbox" name="c2" id="hob">Reading
+    <input type="checkbox" name="c3" id="hob">Playing
+    <input type="checkbox" name="c4" id="hob">Gaming
+</fieldset><br>
+<input type="submit" name="sub" value="Submit" >
 <input type="reset" name="res" value="Reset">
     </form>
 </body>
